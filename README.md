@@ -25,7 +25,7 @@ Before we get started, there are a few things you will need to have:
 # Step 1: Update and Install Dependencies
 
 The first step is to update your Raspberry Pi and install the necessary dependencies. Open up the terminal on your Raspberry Pi and type the following commands:
-```python
+```sql
 sudo apt-get update
 
 sudo apt-get install python3-opencv
