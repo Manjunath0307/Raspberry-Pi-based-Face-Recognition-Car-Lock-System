@@ -219,7 +219,7 @@ for frame in camera.capture_continuous(video_stream, format="bgr", use_video_por
     # Loop through each face in the frame
     for face_encoding, face_location in zip(face_encodings, face_locations):
         # Compare the face encoding with the owner's face encoding
-        match = face_recognition.compare_faces([owner_encoding], face_encoding, tolerance=0.5)
+        match = face_recognition.compare_faces([owner_encoding], face_encoding, tolerance)
 
 
         # If the face matches the owner's face, unlock the car
