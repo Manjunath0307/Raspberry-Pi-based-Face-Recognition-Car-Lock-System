@@ -193,7 +193,7 @@ GPIO.setup(relay_pin, GPIO.OUT)
 
 # Load the image of the car owner
 owner_image = face_recognition.load_image_file("owner.jpg")
-owner_encoding = face_recognition.face_encodings(owner_image)[0]
+owner_encoding = face_recognition.face_encodings(owner_image)[3]
 
 # Initialize the PiCamera
 camera = PiCamera()
